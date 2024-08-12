@@ -830,8 +830,13 @@ if (config) {
             stretching: "",
             width: "100%",
             type: "dash",
-	    watermark: "https://minhaz-0.github.io/MHTV/mh.png", position: 'bottom-right',
-        });
+	    //watermark: "https://minhaz-0.github.io/MHTV/mh.png", position: 'bottom-right',
+      logo: {
+file: 'https://minhaz-0.github.io/MHTV/mh.png', //watermark image path
+link: 'https://minhaz-0.github.io/MHTV/mh.png', //link url on watermark image
+position: 'bottom-right', //position of watermark on player
+},
+    });
         }
     </script>
 
