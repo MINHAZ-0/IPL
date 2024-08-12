@@ -21,7 +21,7 @@
 
 .jwplayer {
                   position: absolute !important;
-	          top: 50px; /*Adjust to fit below the Telegram link */
+	          /*/top: 50px; /*Adjust to fit below the Telegram link */
                   width: 100%;
                   height: calc(100% - 50px); /* Adjust to fit below the Telegram link */
                  
@@ -37,7 +37,7 @@
 
 </head>
 <body>
-    <div id="player" ></div>
+    <div id="jwplayerDiv" ></div>
 
     <script>
         function getParameterByName(name) {
@@ -813,7 +813,7 @@ if (config) {
     }
 
  //JWWWWWW
-    jwplayer("player").setup({
+    jwplayer("jwplayerDiv").setup({
         playlist: [{
             sources: sources
         }],
